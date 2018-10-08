@@ -37,3 +37,18 @@ injectGlobal`
 
 > 公共状态管理模块化, 可以做到功能拆分.
 
+### react-router-dom
+
+> 路由.
+
+```javascript
+import { BrowserRouter, Route } from 'react-router-dom'
+
+// BrowserRouter下只能由一个元素, 需要用div包裹住多个Route
+<BrowserRouter>
+  <div>
+    <Route path='/' exact render={() => <div>home</div>}></Route>
+    <Route path='/detail' exact render={() => <div>detail</div>}></Route>
+  </div>
+</BrowserRouter>
+```
