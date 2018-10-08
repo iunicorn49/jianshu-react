@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import store from './store'
 import { Provider } from 'react-redux'
 
-import Header from './Layout/Header'
+import Header from './Header'
 
 class App extends Component {
   render() {

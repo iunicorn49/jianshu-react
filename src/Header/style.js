@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import logoPic from '../../statics/logo.png'
+import logoPic from '../statics/logo.png'
 
 export const HeaderWrapper = styled.div`
   height: 56px;
@@ -48,7 +48,7 @@ export const NavItem = styled.div`
 export const SearchWrapper = styled.div`
   position: relative;
   float: left;
-  .iconfont {
+  .iconfont.zoom {
     position: absolute;
     right: 4px;
     bottom: 4px;
@@ -99,6 +99,66 @@ export const NavSearch = styled.input.attrs({
   }
   &.slide-exit-active {
     width: 160px;
+  }
+`
+
+export const SearchInfo = styled.div`
+  position: absolute;
+  left: 0;
+  top: 56px;
+  width: 240px;
+  padding: 0 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+`
+export const SearchInfoTitle = styled.div`
+  margin-top: 20px;
+  margin-bottom: 15px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #969696;
+`
+
+export const SearchInfoSwitch = styled.a.attrs({
+  href: '#'
+})`
+  text-decoration: none;
+  color: #969696;
+  float: right;
+  font-size: 13px;
+  &:hover {
+    color: #333;
+  }
+  .spin {
+    display: block;
+    float: left
+    margin-right: 5px;
+    font-size: 12px;
+    transition: all .3s;
+    transform: rotate(0deg);
+    transform-origin: center center;
+  }
+`
+
+export const SearchInfoList = styled.div`
+  overflow: hidden;
+`
+
+export const SearchInfoItem = styled.a.attrs({
+  href: '#'
+})`
+  display: block;
+  text-decoration: none;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  line-height: 20px;
+  padding: 0 5px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  color: #969696;
+  border-radius: 3px;
+  &:hover {
+    color: #333;
   }
 `
 

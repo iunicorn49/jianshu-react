@@ -1,0 +1,6 @@
+export const IS_FOCUS = 'header/isFocus'
+export const IS_BLUR = 'header/isBlur'
+export const GET_LIST = 'header/getList'
+export const MOUSE_ENTER = 'header/mouseEnter'
+export const MOUSE_LEAVE = 'header/mouseLeave'
+export const CHANGE_PAGE = 'header/changePage'
