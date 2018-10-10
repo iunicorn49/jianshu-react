@@ -21,3 +21,16 @@ export const HomeRight = styled.div`
 	float: right;
 	width: 240px;
 `
+
+export const BackTop = styled.div`
+	position: fixed;
+	right: 100px;
+	bottom: 100px;
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+	text-align: center;
+	color: #333;
+	border: 1px solid #333;
+	font-size: 12px;
+`

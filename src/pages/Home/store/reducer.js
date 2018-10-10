@@ -24,11 +24,16 @@ const defaultState = fromJS({
 			})
 		}
 		return list
-	})()
+	})(),
+	showTop: false
 })
 
 export default (state = defaultState, action) => {
 	switch(action.type) {
+	case 'showTopOn':
+		return state.set('showTop', true)
+	case 'showTopOff':	
+		return state.set('showTop', false)
 	default:
 		return state	
 	}
